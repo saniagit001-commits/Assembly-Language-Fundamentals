@@ -15,8 +15,8 @@ mov ax, 0B800h            ; AX = Accumulator Register ? load VGA (Video Graphics
 
 mov ds, ax                ; DS = Data Segment Register ? points data access to video memory
 
-mov [0], 'H'              ; Write ASCII (American Standard Code for Information Interchange)
-                          ; character 'H' at video memory offset 0000h (row 0, column 0)
+mov [0], 'L'              ; Write ASCII (American Standard Code for Information Interchange)
+                          ; character 'L' at video memory offset 0000h (row 0, column 0)
 
 mov [1], 07h              ; Write color attribute byte
                           ; 07h ? foreground: light gray, background: black
